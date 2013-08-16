@@ -23,7 +23,9 @@ $('#instagram').on('pageinit', function(){
 		var tag = "lookthrumyeyes";
 		var url = "https://api.instagram.com/v1/tags/" + tag + "/media/recent?callback=?&amp;client_id=ceb5afc4977048d6a656adbaf27faf0f";
 		$.getJSON(url, screenOutput);
+		console.log(url);
 	});
+	
 }); // end instagram pageinit
 
 
