@@ -51,6 +51,7 @@
 		E52A9DE15DCD4476AD18E75D /* CDVSound.m in Sources */ = {isa = PBXBuildFile; fileRef = E7054AB2A66F400D9480D868 /* CDVSound.m */; };
 		EEDD3481E3654BDDB8E6CAEC /* CDVCompass.m in Sources */ = {isa = PBXBuildFile; fileRef = AB317AD16B25452E9FFC2C31 /* CDVCompass.m */; };
 		F840E1F1165FE0F500CFE078 /* config.xml in Resources */ = {isa = PBXBuildFile; fileRef = F840E1F0165FE0F500CFE078 /* config.xml */; };
+		05D4D21A1DA74C48AA9767C1 /* CDVInAppBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = CA6B2BC2A48340DAA51B3D8A /* CDVInAppBrowser.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -136,6 +137,8 @@
 		EE933919E0BF43F99043A372 /* CDVLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDVLocation.h; path = org.apache.cordova.core.geolocation/CDVLocation.h; sourceTree = "<group>"; };
 		F840E1F0165FE0F500CFE078 /* config.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = config.xml; path = avf1308/config.xml; sourceTree = "<group>"; };
 		FA8A3642B103416DBA105AFF /* CDVFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CDVFile.m; path = org.apache.cordova.core.file/CDVFile.m; sourceTree = "<group>"; };
+		CA6B2BC2A48340DAA51B3D8A /* CDVInAppBrowser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = "CDVInAppBrowser.m"; path = "org.apache.cordova.core.inappbrowser/CDVInAppBrowser.m"; sourceTree = "<group>"; fileEncoding = 4; };
+		737BA8DA26FB4C8FBF4EE049 /* CDVInAppBrowser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "CDVInAppBrowser.h"; path = "org.apache.cordova.core.inappbrowser/CDVInAppBrowser.h"; sourceTree = "<group>"; fileEncoding = 4; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -301,6 +304,8 @@
 				2879057E30494A98AD4A6352 /* CDVCapture.h */,
 				E7054AB2A66F400D9480D868 /* CDVSound.m */,
 				B056BCC099A8467DBC4E0CCC /* CDVSound.h */,
+				CA6B2BC2A48340DAA51B3D8A /* CDVInAppBrowser.m */,
+				737BA8DA26FB4C8FBF4EE049 /* CDVInAppBrowser.h */,
 			);
 			name = Plugins;
 			path = avf1308/Plugins;
@@ -476,6 +481,7 @@
 				A97F1E85BD6746F699B17B0B /* CDVFile.m in Sources */,
 				57D687A92296442EB5C9BF0E /* CDVCapture.m in Sources */,
 				E52A9DE15DCD4476AD18E75D /* CDVSound.m in Sources */,
+				05D4D21A1DA74C48AA9767C1 /* CDVInAppBrowser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

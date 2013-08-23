@@ -158,8 +158,27 @@ $('#photo').on('pageinit', function() {
 }); // end picture pageinit
 
 
+$('#browser').on('pageinit', function() {
+	document.addEventListener("deviceready",onDeviceReady,false);
+		var onDeviceReady=function () {
+         var ref = window.open('http://apache.org', '_blank', 'location=yes');
+         ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+         ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+         ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+         ref.addEventListener('exit', function(event) { alert(event.type); });
+    }
+	
+}); // end browser pageinit
 
 
+$('#device').on('pageinit', function() {
+	document.addEventListener("deviceready",onDeviceReady,false);
+		var onDeviceReady=function () {
+        $("deviceinfo").html ('<h2> Your Device Name Is: </h2><br><h1>'+ device.name +
+							  '</h1><br><h2>Your Device UUID Is: </h2><br><h1>' + device.uuid + '</h1>');
+    }
+	
+}); // end device pageinit
 
 
 //}; // end onDeviceReady
