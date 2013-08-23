@@ -34,6 +34,7 @@
 		<!--<script src="js/libs/modernizr.custom.min.js"></script>-->
 	
         <title>AVF App</title>
+        
     </head>
     
     
@@ -49,6 +50,8 @@
 				<p> <a href="#weather" data-role="button" >View Weather Feed</a> </p>
                 <p> <a href="#location" data-role="button" >Get My Location</a> </p>
                 <p> <a href="#picture" data-role="button" >Take a Picture</a> </p>
+                <p> <a href="#browser" data-role="button" >Load the Browser</a> </p>
+                <p> <a href="#device" data-role="button" >Get Your Device Info</a> </p>
 			
            </div>
         
@@ -60,7 +63,9 @@
 						<li><a href="#instagram" >instagram</a></li>
                         <li><a href="#weather" >weather</a></li>
                         <li><a href="#location" >location</a></li>
-                        <li><a href="#picture" >location</a></li>
+                        <li><a href="#picture" >picture</a></li>
+                        <li><a href="#browser" >browser</a></li>
+                        <li><a href="#device" >device</a></li>
 						<li><a href="#about">about</a></li>
 					</ul>
 				</div>   
@@ -97,7 +102,9 @@
 						<li><a href="#instagram" class="ui-btn-active">instagram</a></li>
                         <li><a href="#weather" >weather</a></li>
                         <li><a href="#location" >location</a></li>
-                        <li><a href="#picture" >location</a></li>
+                        <li><a href="#picture" >picture</a></li>
+                        <li><a href="#browser" >browser</a></li>
+                        <li><a href="#device" >device</a></li>
 						<li><a href="#about">about</a></li>
 					</ul>
 				</div>   
@@ -128,7 +135,9 @@
 						<li><a href="#instagram" >instagram</a></li>
                         <li><a href="#weather" class="ui-btn-active">weather</a></li>
                         <li><a href="#location" >location</a></li>
-                        <li><a href="#picture" >location</a></li>
+                        <li><a href="#picture" >picture</a></li>
+                        <li><a href="#browser" >browser</a></li>
+                        <li><a href="#device" >device</a></li>
 						<li><a href="#about">about</a></li>
 					</ul>
 				</div>   
@@ -158,7 +167,9 @@
 						<li><a href="#instagram" >instagram</a></li>
                         <li><a href="#weather" >weather</a></li>
                         <li><a href="#location" class="ui-btn-active">location</a></li>
-                        <li><a href="#picture" >location</a></li>
+                        <li><a href="#picture" >picture</a></li>
+                        <li><a href="#browser" >browser</a></li>
+                        <li><a href="#device" >device</a></li>
 						<li><a href="#about">about</a></li>
 					</ul>
 				</div>   
@@ -178,7 +189,7 @@
                 <button onclick="getPhoto(pictureSource.PHOTOLIBRARY);">From Photo Library</button><br>
                 <button onclick="getPhoto(pictureSource.SAVEDPHOTOALBUM);">From Photo Album</button><br>
                 <img style="display:none;width:60px;height:60px;" id="smallImage" src="" />
-                <img style="display:none;" id="largeImage" src="" />
+            <img style="display:none;" id="largeImage" src="" />
                 
 			</div>
             
@@ -193,14 +204,76 @@
                         <li><a href="#weather" >weather</a></li>
                         <li><a href="#location" >location</a></li>
                         <li><a href="#picture" class="ui-btn-active">picture</a></li>
-						<li><a href="#about">about</a></li>
+						<li><a href="#browser" >browser</a></li>
+                        <li><a href="#device" >device</a></li>
+                        <li><a href="#about">about</a></li>
 					</ul>
 				</div>   
 			</div>
 		</div>	             
         
     
+<!-- Browser Page -->
+		<div data-role="page" id="browser" >
+        	<div data-role="header" data-position="fixed" >
+				<h1> <a href="index.html">AVF App</a></h1>
+			</div>
+			
+			 <div data-role="content">
+				
+               
+                
+			</div>
+            
+            
         
+		
+			<div data-role="footer" data-position="fixed" >
+				<div data-role="navbar">
+					<ul>
+						<li><a href="#main" >home</a></li>
+						<li><a href="#instagram" >instagram</a></li>
+                        <li><a href="#weather" >weather</a></li>
+                        <li><a href="#location" >location</a></li>
+                        <li><a href="#picture" >picture</a></li>
+                        <li><a href="#browser" class="ui-btn-active">browser</a></li>
+                        <li><a href="#device" >device</a></li>
+						<li><a href="#about">about</a></li>
+					</ul>
+				</div>   
+			</div>
+		</div>	                    
+        
+        
+<!-- Device Page -->
+		<div data-role="page" id="device" >
+        	<div data-role="header" data-position="fixed" >
+				<h1> <a href="index.html">AVF App</a></h1>
+			</div>
+			
+    		<div data-role="content">
+				
+                <div id="devicewindow">
+                   <h2 id="deviceinfo">Loading device info...</h2>
+                </div>
+			</div>
+            
+            
+            <div data-role="footer" data-position="fixed" >
+                <div data-role="navbar">
+					<ul>
+						<li><a href="#main" >home</a></li>
+						<li><a href="#instagram" >instagram</a></li>
+                        <li><a href="#weather" >weather</a></li>
+                        <li><a href="#location" >location</a></li>
+                        <li><a href="#picture" >picture</a></li>
+                        <li><a href="#browser" >browser</a></li>
+                        <li><a href="#device" class="ui-btn-active">device</a></li>
+						<li><a href="#about">about</a></li>
+					</ul>
+				</div>   
+			</div>
+		</div>
         
         
 <!-- About Page --> 		
@@ -232,7 +305,9 @@
 						<li><a href="#instagram" >instagram</a></li>
                         <li><a href="#weather" >weather</a></li>
                         <li><a href="#location" >location</a></li>
-                        <li><a href="#picture" >location</a></li>
+                        <li><a href="#picture" >picture</a></li>
+                        <li><a href="#browser" >browser</a></li>
+                        <li><a href="#device" >device</a></li>
 						<li><a href="#about" class="ui-btn-active">about</a></li>
 					</ul>
 				</div>   
@@ -244,15 +319,16 @@
 		
 		
 		
-		<!--<script type="text/javascript" src="cordova.js"></script>
+		
+    
+    </body>
+    <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
-        </script> -->
+        </script>
         <script src="js/jquery.js"></script>
 		<script src="js/jquery.mobile-1.3.1.js"></script>
 		<script src="js/libs/jquery.validate.min.js"></script>
 		<script src="js/main.js"></script>	   
-    
-    </body>
 </html>
