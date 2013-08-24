@@ -134,6 +134,13 @@ module.exports = [
         ]
     },
     {
+        "file": "plugins/org.apache.cordova.core.inappbrowser/www/InAppBrowser.js",
+        "id": "org.apache.cordova.core.inappbrowser.InAppBrowser",
+        "clobbers": [
+            "window.open"
+        ]
+    },
+    {
         "file": "plugins/org.apache.cordova.core.camera/www/CameraConstants.js",
         "id": "org.apache.cordova.core.camera.Camera",
         "clobbers": [
@@ -159,13 +166,6 @@ module.exports = [
         "id": "org.apache.cordova.core.camera.CameraPopoverHandle",
         "clobbers": [
             "CameraPopoverHandle"
-        ]
-    },
-    {
-        "file": "plugins/org.apache.cordova.core.inappbrowser/www/InAppBrowser.js",
-        "id": "org.apache.cordova.core.inappbrowser.InAppBrowser",
-        "clobbers": [
-            "window.open"
         ]
     },
     {

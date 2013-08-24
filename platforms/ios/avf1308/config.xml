@@ -5,7 +5,6 @@
         A sample Apache Cordova application that responds to the deviceready event.
     </description>
     <author email="gkoenig@fullsail.edu" href="http://cordova.io">
-        
     </author>
     <content src="index.html" />
     <feature name="LocalStorage">
