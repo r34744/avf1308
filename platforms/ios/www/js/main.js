@@ -81,7 +81,6 @@ $('#photo').on('pageinit', function() {
         pictureSource=navigator.camera.PictureSourceType;
         destinationType=navigator.camera.DestinationType;
     }
-
     // Called when a photo is successfully retrieved
     //
     function onPhotoDataSuccess(imageData) {
